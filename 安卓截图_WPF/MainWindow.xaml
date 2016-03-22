@@ -1,0 +1,12 @@
+﻿<Window x:Class="安卓截图_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="安卓截图" Height="620" Width="330" Icon="ico.ico">
+    <StackPanel>
+        <Grid>
+            <TextBlock Text="点击截图" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" MouseDown="screenshotImage_MouseDown"></TextBlock>
+            <Image Name="screenshotImage" Source="screenshot.png" MouseDown="screenshotImage_MouseDown"></Image>
+        </Grid>
+        <CheckBox Name="shotCheckBox" Content="连续截图" IsChecked="False" Click="shotCheckBox_Click" ></CheckBox>
+    </StackPanel>
+</Window>
